@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Step Counter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="service_running">Step Counting</string>
+    <string name="steps">steps</string>
+    <string name="reset">Reset</string>
+    <string name="no_sensor">Step Counter Sensor Not Available</string>
+
+</resources>
