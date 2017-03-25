@@ -51,7 +51,8 @@ public class MainActivity extends Activity implements CompoundButton.OnCheckedCh
         if(countSensor == null)
         {
             tvStepsText.setText(getString(R.string.no_sensor));
-            tvSteps.setVisibility(View.GONE);
+            tvSteps.setVisibility(View.INVISIBLE);
+            pbLoading.setVisibility(View.GONE);
         }
         else
         {

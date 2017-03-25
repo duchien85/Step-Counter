@@ -1,12 +1,12 @@
 package com.pedja1.stepcounter.app;
 
+import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.TaskStackBuilder;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
-import android.support.v4.app.NotificationCompat;
 
 /**
  * Created by pedja on 30.7.14. 11.49.
@@ -31,10 +31,10 @@ public class NotificationUtils
 
         PendingIntent contentIntent = stackBuilder.getPendingIntent(0, PendingIntent.FLAG_UPDATE_CURRENT);
 
-        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(context);
+        Notification.Builder mBuilder = new Notification.Builder(context);
 
         //users avatar
-        mBuilder.setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.drawable.ic_launcher));
+        mBuilder.setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.mipmap.ic_launcher));
 
         //maybe type icon(message icon for example if its message)
         mBuilder.setSmallIcon(R.drawable.ic_stat_notif);
